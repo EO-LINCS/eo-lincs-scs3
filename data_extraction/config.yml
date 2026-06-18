@@ -95,7 +95,7 @@ data_stores:
 - identifier: storage
   store_id: file
   store_params:
-    root: final
+    root: ../data
 - identifier: esa-cci-store
   store_id: cciodp
 - identifier: stac-store
@@ -104,5 +104,5 @@ data_stores:
   store_id: cds
   store_params:
     endpoint_url: https://cds.climate.copernicus.eu/api
-    cds_api_key: <cds-api-key>
+    cds_api_key: cds-api-key
     normalize_names: true
