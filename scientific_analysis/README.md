@@ -10,7 +10,7 @@
 This directory contains the notebooks and supporting functions used for the scientific 
 analysis. The workflow is structured as follows:
 
-`run_insitu_inversion_XuShan.ipynb` Apply the methods described in D5.4 and processes the data and generates the scientific results. Environment files are `Manifest.toml` and `environment.yml` for the Conda environment. `extracted_figures` is the directory where the figures generated in the notebooks are stored. `output_AU-Dry_WROASTED` contains the outputs of the Model-Data Integration. `setup_dev_packages.jl` is a Julia script to set up the development environment for the Julia packages used in the notebooks. `settings_LUE` contains the configuration files for the Model-Data Integration.
+`run_insitu_inversion.ipynb` Apply the methods described in D5.4 and processes the data and generates the scientific results. Environment files are `Manifest.toml` and `environment.yml` for the Conda environment. `extracted_figures` is the directory where the figures generated in the notebooks are stored. `output_AU-Dry_WROASTED` contains the outputs of the Model-Data Integration. `setup_dev_packages.jl` is a Julia script to set up the development environment for the Julia packages used in the notebooks. `settings_LUE` contains the configuration files for the Model-Data Integration.
 
 ## Methods
 In this scientific case, we apply the methods described in D5.4, which include the following steps:
