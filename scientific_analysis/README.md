@@ -10,30 +10,13 @@
 This directory contains the notebooks and supporting functions used for the scientific 
 analysis. The workflow is structured as follows:
 
-1. `01_data_processing.ipynb` Apply the methods described in D5.4 and processes the 
-   data and generates the scientific results.
-2. `02_data_visualization.ipynb` Visualizes the results of the analysis which are shown
-   in D5.4.
-3. Add more notebooks if needed. 
-
-The `utils` directory contains reusable functions that support data processing and 
-visualization tasks within the notebooks.
+`run_insitu_inversion.ipynb` Apply the methods described in D5.4 and processes the data and generates the scientific results. Environment files are `Manifest.toml` and `environment.yml` for the Conda environment. `extracted_figures` is the directory where the figures generated in the notebooks are stored. `output_AU-Dry_WROASTED` contains the outputs of the Model-Data Integration. `setup_dev_packages.jl` is a Julia script to set up the development environment for the Julia packages used in the notebooks. `settings_LUE` contains the configuration files for the Model-Data Integration.
 
 ## Methods
-Here, the methods can be described in general terms if necessary.
+In this scientific case, we apply the methods described in D5.4, which include the following steps:
+1. Data preprocessing: This step involves cleaning and preparing the data for analysis, including handling missing values, normalizing the data, and selecting relevant features.
+2. Model-Data Integration: This step involves integrating the Earth Observation data with complementary EO products using the SINDBAD terrestrial ecosystem modelling framework. This includes configuring the model, running simulations, and assimilating the data to improve model accuracy.
+3. Analysis and Interpretation: This step involves analyzing the results of the Model-Data Integration to understand the carbon state-flux relationships. This includes visualizing the results, comparing them with EO observations, and interpreting the findings in the context of optimized parameters.
 
 ## Result and further discussion
-Here results and further discussion can be provided, if necessary.
-
-## Add more sections if needed
-
-
-> **Note:** The structure of the analysis is intentionally flexible. Please follow 
-> these general guidelines:
->
-> - Number notebooks in the order they are intended to be executed.
-> - Use clear, descriptive names for notebooks.
-> - The datasets are stored in the `data` directory. Access them using relative paths (e.g. via the xcube file data store).
-> - Move complex or reusable logic (e.g. recurrent data manipulation, plotting routine) into functions within the `utils` directory.
-> - Document in the notebook what each external function does when it is used.
-> - Use descriptive and consistent naming for all functions.
+Here the scientific analysis demonstrates the application of the methods described in D5.4 to the SCS3, which involves integrating EO products into SINDBAD. The results show that the Model-Data Integration using the SINDBAD framework can improve the accuracy of ecosystem carbon cycle models by leveraging and comparing EO data of biomass and vegetation states together with model simulation estimates. The analysis provides insights into the carbon state-flux relationships and highlights the potential of using EO data to enhance our understanding of terrestrial ecosystems. Further discussion can focus on the utilizing more EO data in future studies to constrain the model parameters and reduce equifinality.
