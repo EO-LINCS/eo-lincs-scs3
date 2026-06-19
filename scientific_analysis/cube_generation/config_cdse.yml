@@ -1,0 +1,9041 @@
+datasets:
+- identifier: AR-SLu_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: &id001
+    - '2020-01-01'
+    - '2020-12-31'
+    point:
+    - -66.4598
+    - -33.4648
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AR-SLu_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -66.4598
+    - -33.4648
+- identifier: AR-SLu_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AR-SLu_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AR-Vir_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -56.1886
+    - -28.2395
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AR-Vir_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -56.1886
+    - -28.2395
+- identifier: AR-Vir_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AR-Vir_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AT-Neu_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.3175001144409
+    - 47.1166687011718
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AT-Neu_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.3175001144409
+    - 47.1166687011718
+- identifier: AT-Neu_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AT-Neu_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-ASM_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 133.249
+    - -22.283
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-ASM_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 133.249
+    - -22.283
+- identifier: AU-ASM_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-ASM_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Ade_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 131.1178
+    - -13.0769
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Ade_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 131.1178
+    - -13.0769
+- identifier: AU-Ade_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Ade_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Cpr_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 140.5891
+    - -34.0021
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Cpr_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 140.5891
+    - -34.0021
+- identifier: AU-Cpr_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Cpr_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Cum_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 150.7236
+    - -33.6152
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Cum_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 150.7236
+    - -33.6152
+- identifier: AU-Cum_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Cum_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-DaP_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 131.3181
+    - -14.0633
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-DaP_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 131.3181
+    - -14.0633
+- identifier: AU-DaP_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-DaP_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-DaS_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 131.3881
+    - -14.1593
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-DaS_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 131.3881
+    - -14.1593
+- identifier: AU-DaS_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-DaS_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Dry_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 132.3706
+    - -15.2588
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Dry_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 132.3706
+    - -15.2588
+- identifier: AU-Dry_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Dry_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Emr_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 148.4746
+    - -23.8587
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Emr_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 148.4746
+    - -23.8587
+- identifier: AU-Emr_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Emr_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Fog_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 131.3072
+    - -12.5452
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Fog_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 131.3072
+    - -12.5452
+- identifier: AU-Fog_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Fog_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Gin_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 115.7138
+    - -31.3764
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Gin_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 115.7138
+    - -31.3764
+- identifier: AU-Gin_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Gin_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-RDF_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 132.4776
+    - -14.5636
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-RDF_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 132.4776
+    - -14.5636
+- identifier: AU-RDF_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-RDF_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Rob_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 145.6301
+    - -17.1175
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Rob_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 145.6301
+    - -17.1175
+- identifier: AU-Rob_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Rob_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-TTE_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 133.64
+    - -22.287
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-TTE_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 133.64
+    - -22.287
+- identifier: AU-TTE_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-TTE_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Tum_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 148.1517
+    - -35.6566
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Tum_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 148.1517
+    - -35.6566
+- identifier: AU-Tum_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Tum_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Wac_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 145.1878
+    - -37.4259
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Wac_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 145.1878
+    - -37.4259
+- identifier: AU-Wac_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Wac_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Whr_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 145.0294
+    - -36.6732
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Whr_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 145.0294
+    - -36.6732
+- identifier: AU-Whr_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Whr_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Wom_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 144.0944
+    - -37.4222
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Wom_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 144.0944
+    - -37.4222
+- identifier: AU-Wom_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Wom_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: AU-Ync_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 146.291606
+    - -34.988282
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: AU-Ync_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 146.291606
+    - -34.988282
+- identifier: AU-Ync_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Ync_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: BE-Bra_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 4.51984
+    - 51.30761
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: BE-Bra_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 4.51984
+    - 51.30761
+- identifier: BE-Bra_ccibiomass
+  store: esa-cci-store
+  grid_mapping: BE-Bra_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: BE-Lon_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 4.7462339
+    - 50.5516198
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: BE-Lon_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 4.7462339
+    - 50.5516198
+- identifier: BE-Lon_ccibiomass
+  store: esa-cci-store
+  grid_mapping: BE-Lon_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: BE-Vie_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 5.99811511350303
+    - 50.3049329013726
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: BE-Vie_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 5.99811511350303
+    - 50.3049329013726
+- identifier: BE-Vie_ccibiomass
+  store: esa-cci-store
+  grid_mapping: BE-Vie_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: BR-Sa1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -54.9589
+    - -2.8567
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: BR-Sa1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -54.9589
+    - -2.8567
+- identifier: BR-Sa1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: BR-Sa1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: BR-Sa3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -54.9714
+    - -3.018
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: BR-Sa3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -54.9714
+    - -3.018
+- identifier: BR-Sa3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: BR-Sa3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-Gro_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -82.1556
+    - 48.2167
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-Gro_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -82.1556
+    - 48.2167
+- identifier: CA-Gro_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-Gro_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-Man_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -98.4808
+    - 55.8796
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-Man_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -98.4808
+    - 55.8796
+- identifier: CA-Man_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-Man_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-NS2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -98.5247
+    - 55.9058
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-NS2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -98.5247
+    - 55.9058
+- identifier: CA-NS2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-NS2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-NS3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -98.3822
+    - 55.9117
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-NS3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -98.3822
+    - 55.9117
+- identifier: CA-NS3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-NS3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-NS4_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -98.3806
+    - 55.9144
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-NS4_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -98.3806
+    - 55.9144
+- identifier: CA-NS4_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-NS4_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-NS5_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -98.485
+    - 55.8631
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-NS5_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -98.485
+    - 55.8631
+- identifier: CA-NS5_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-NS5_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-NS6_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -98.9644
+    - 55.9167
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-NS6_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -98.9644
+    - 55.9167
+- identifier: CA-NS6_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-NS6_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-NS7_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -99.9483
+    - 56.6358
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-NS7_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -99.9483
+    - 56.6358
+- identifier: CA-NS7_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-NS7_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-Oas_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -106.1978
+    - 53.6289
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-Oas_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -106.1978
+    - 53.6289
+- identifier: CA-Oas_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-Oas_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-Obs_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -105.1178
+    - 53.9872
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-Obs_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -105.1178
+    - 53.9872
+- identifier: CA-Obs_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-Obs_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-Qfo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -74.3421
+    - 49.6925
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-Qfo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -74.3421
+    - 49.6925
+- identifier: CA-Qfo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-Qfo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-SF1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -105.8176
+    - 54.485
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-SF1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -105.8176
+    - 54.485
+- identifier: CA-SF1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-SF1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-SF2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -105.8775
+    - 54.2539
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-SF2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -105.8775
+    - 54.2539
+- identifier: CA-SF2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-SF2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-SF3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -106.0053
+    - 54.0916
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-SF3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -106.0053
+    - 54.0916
+- identifier: CA-SF3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-SF3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-TP1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -80.5595
+    - 42.6609
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-TP1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -80.5595
+    - 42.6609
+- identifier: CA-TP1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-TP1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-TP2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -80.4588
+    - 42.7744
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-TP2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -80.4588
+    - 42.7744
+- identifier: CA-TP2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-TP2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-TP3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -80.3483
+    - 42.7068
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-TP3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -80.3483
+    - 42.7068
+- identifier: CA-TP3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-TP3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-TP4_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -80.3574
+    - 42.7102
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-TP4_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -80.3574
+    - 42.7102
+- identifier: CA-TP4_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-TP4_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CA-TPD_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -80.5577
+    - 42.6353
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CA-TPD_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -80.5577
+    - 42.6353
+- identifier: CA-TPD_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CA-TPD_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CG-Tch_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.65641667
+    - -4.289166667
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CG-Tch_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.65641667
+    - -4.289166667
+- identifier: CG-Tch_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CG-Tch_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CH-Cha_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 8.410444444
+    - 47.21022222
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CH-Cha_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 8.410444444
+    - 47.21022222
+- identifier: CH-Cha_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CH-Cha_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CH-Dav_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 9.85591
+    - 46.81533
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CH-Dav_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 9.85591
+    - 46.81533
+- identifier: CH-Dav_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CH-Dav_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CH-Fru_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 8.537777778
+    - 47.11583333
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CH-Fru_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 8.537777778
+    - 47.11583333
+- identifier: CH-Fru_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CH-Fru_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CH-Lae_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 8.365
+    - 47.47808333
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CH-Lae_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 8.365
+    - 47.47808333
+- identifier: CH-Lae_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CH-Lae_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CH-Oe1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 7.731944444
+    - 47.28583333
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CH-Oe1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 7.731944444
+    - 47.28583333
+- identifier: CH-Oe1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CH-Oe1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CH-Oe2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 7.734333333
+    - 47.28630556
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CH-Oe2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 7.734333333
+    - 47.28630556
+- identifier: CH-Oe2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CH-Oe2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-Cha_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 128.0958
+    - 42.4025
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-Cha_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 128.0958
+    - 42.4025
+- identifier: CN-Cha_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-Cha_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-Cng_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 123.5092
+    - 44.5934
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-Cng_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 123.5092
+    - 44.5934
+- identifier: CN-Cng_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-Cng_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-Dan_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 91.0664
+    - 30.4978
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-Dan_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 91.0664
+    - 30.4978
+- identifier: CN-Dan_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-Dan_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-Din_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 112.5361
+    - 23.1733
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-Din_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 112.5361
+    - 23.1733
+- identifier: CN-Din_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-Din_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-Du2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 116.283611
+    - 42.046667
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-Du2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 116.283611
+    - 42.046667
+- identifier: CN-Du2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-Du2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-Du3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 116.2809
+    - 42.0551
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-Du3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 116.2809
+    - 42.0551
+- identifier: CN-Du3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-Du3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-HaM_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 101.18
+    - 37.37
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-HaM_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 101.18
+    - 37.37
+- identifier: CN-HaM_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-HaM_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-Qia_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 115.066338
+    - 26.733959
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-Qia_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 115.066338
+    - 26.733959
+- identifier: CN-Qia_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-Qia_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CN-Sw2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 111.8971
+    - 41.7902
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CN-Sw2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 111.8971
+    - 41.7902
+- identifier: CN-Sw2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CN-Sw2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CZ-BK1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 18.5368595123291
+    - 49.5021286010742
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CZ-BK1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 18.5368595123291
+    - 49.5021286010742
+- identifier: CZ-BK1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CZ-BK1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CZ-BK2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 18.54285
+    - 49.49443
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CZ-BK2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 18.54285
+    - 49.49443
+- identifier: CZ-BK2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CZ-BK2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: CZ-wet_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 14.77035
+    - 49.02465
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: CZ-wet_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 14.77035
+    - 49.02465
+- identifier: CZ-wet_ccibiomass
+  store: esa-cci-store
+  grid_mapping: CZ-wet_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Akm_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 13.68342
+    - 53.86617
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Akm_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 13.68342
+    - 53.86617
+- identifier: DE-Akm_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Akm_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Geb_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 10.91463
+    - 51.09973
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Geb_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 10.91463
+    - 51.09973
+- identifier: DE-Geb_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Geb_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Gri_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 13.51259
+    - 50.95004
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Gri_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 13.51259
+    - 50.95004
+- identifier: DE-Gri_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Gri_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Hai_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 10.453
+    - 51.07916667
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Hai_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 10.453
+    - 51.07916667
+- identifier: DE-Hai_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Hai_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Kli_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 13.52238
+    - 50.89306
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Kli_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 13.52238
+    - 50.89306
+- identifier: DE-Kli_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Kli_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Lkb_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 13.30466667
+    - 49.09961667
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Lkb_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 13.30466667
+    - 49.09961667
+- identifier: DE-Lkb_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Lkb_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Lnf_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 10.3678
+    - 51.3282167
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Lnf_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 10.3678
+    - 51.3282167
+- identifier: DE-Lnf_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Lnf_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Obe_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 13.72129
+    - 50.78666
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Obe_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 13.72129
+    - 50.78666
+- identifier: DE-Obe_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Obe_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-RuR_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 6.3041256
+    - 50.6219142
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-RuR_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 6.3041256
+    - 50.6219142
+- identifier: DE-RuR_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-RuR_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-RuS_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 6.447144704
+    - 50.86590702
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-RuS_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 6.447144704
+    - 50.86590702
+- identifier: DE-RuS_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-RuS_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Seh_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 6.44965306
+    - 50.8706233
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Seh_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 6.44965306
+    - 50.8706233
+- identifier: DE-Seh_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Seh_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-SfN_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.3275
+    - 47.806389
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-SfN_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.3275
+    - 47.806389
+- identifier: DE-SfN_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-SfN_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Spw_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 14.03369
+    - 51.89225
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Spw_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 14.03369
+    - 51.89225
+- identifier: DE-Spw_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Spw_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Tha_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 13.56515
+    - 50.96256
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Tha_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 13.56515
+    - 50.96256
+- identifier: DE-Tha_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Tha_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DE-Zrk_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 12.88901
+    - 53.875943
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DE-Zrk_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 12.88901
+    - 53.875943
+- identifier: DE-Zrk_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DE-Zrk_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DK-Eng_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 12.19175
+    - 55.69052778
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DK-Eng_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 12.19175
+    - 55.69052778
+- identifier: DK-Eng_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DK-Eng_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DK-Fou_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 9.58722019195556
+    - 56.4841995239257
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DK-Fou_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 9.58722019195556
+    - 56.4841995239257
+- identifier: DK-Fou_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DK-Fou_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: DK-Sor_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.6446444
+    - 55.4858694
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: DK-Sor_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.6446444
+    - 55.4858694
+- identifier: DK-Sor_ccibiomass
+  store: esa-cci-store
+  grid_mapping: DK-Sor_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: ES-Amo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -2.252318
+    - 36.833608
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: ES-Amo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -2.252318
+    - 36.833608
+- identifier: ES-Amo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: ES-Amo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: ES-LJu_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -2.752115
+    - 36.926594
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: ES-LJu_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -2.752115
+    - 36.926594
+- identifier: ES-LJu_ccibiomass
+  store: esa-cci-store
+  grid_mapping: ES-LJu_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: ES-LgS_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -2.965833
+    - 37.097936
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: ES-LgS_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -2.965833
+    - 37.097936
+- identifier: ES-LgS_ccibiomass
+  store: esa-cci-store
+  grid_mapping: ES-LgS_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: ES-Ln2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -3.475819
+    - 36.969502
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: ES-Ln2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -3.475819
+    - 36.969502
+- identifier: ES-Ln2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: ES-Ln2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FI-Hyy_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 24.29477
+    - 61.84741
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FI-Hyy_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 24.29477
+    - 61.84741
+- identifier: FI-Hyy_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FI-Hyy_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FI-Jok_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 23.51345
+    - 60.8986
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FI-Jok_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 23.51345
+    - 60.8986
+- identifier: FI-Jok_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FI-Jok_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FI-Let_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 23.95952
+    - 60.64183
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FI-Let_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 23.95952
+    - 60.64183
+- identifier: FI-Let_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FI-Let_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FI-Lom_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 24.209178
+    - 67.997239
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FI-Lom_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 24.209178
+    - 67.997239
+- identifier: FI-Lom_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FI-Lom_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FI-Sod_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 26.63859066
+    - 67.36238641
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FI-Sod_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 26.63859066
+    - 67.36238641
+- identifier: FI-Sod_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FI-Sod_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FR-Fon_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 2.780096
+    - 48.476358
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FR-Fon_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 2.780096
+    - 48.476358
+- identifier: FR-Fon_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FR-Fon_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FR-Gri_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 1.95191
+    - 48.84422
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FR-Gri_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 1.95191
+    - 48.84422
+- identifier: FR-Gri_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FR-Gri_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FR-LBr_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -0.7693
+    - 44.71711
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FR-LBr_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -0.7693
+    - 44.71711
+- identifier: FR-LBr_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FR-LBr_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: FR-Pue_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 3.5957
+    - 43.7413
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: FR-Pue_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 3.5957
+    - 43.7413
+- identifier: FR-Pue_ccibiomass
+  store: esa-cci-store
+  grid_mapping: FR-Pue_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: GF-Guy_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -52.924861907959
+    - 5.27877187728882
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: GF-Guy_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -52.924861907959
+    - 5.27877187728882
+- identifier: GF-Guy_ccibiomass
+  store: esa-cci-store
+  grid_mapping: GF-Guy_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: GH-Ank_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -2.69420592
+    - 5.26854275
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: GH-Ank_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -2.69420592
+    - 5.26854275
+- identifier: GH-Ank_ccibiomass
+  store: esa-cci-store
+  grid_mapping: GH-Ank_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: GL-NuF_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -51.38611
+    - 64.13083
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: GL-NuF_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -51.38611
+    - 64.13083
+- identifier: GL-NuF_ccibiomass
+  store: esa-cci-store
+  grid_mapping: GL-NuF_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: GL-ZaF_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -20.554517
+    - 74.481433
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: GL-ZaF_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -20.554517
+    - 74.481433
+- identifier: GL-ZaF_ccibiomass
+  store: esa-cci-store
+  grid_mapping: GL-ZaF_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: GL-ZaH_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -20.5503
+    - 74.47328
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: GL-ZaH_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -20.5503
+    - 74.47328
+- identifier: GL-ZaH_ccibiomass
+  store: esa-cci-store
+  grid_mapping: GL-ZaH_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-BCi_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 14.95744444
+    - 40.52375
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-BCi_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 14.95744444
+    - 40.52375
+- identifier: IT-BCi_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-BCi_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-CA1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 12.02656111
+    - 42.38041111
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-CA1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 12.02656111
+    - 42.38041111
+- identifier: IT-CA1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-CA1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-CA2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 12.02603889
+    - 42.37721944
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-CA2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 12.02603889
+    - 42.37721944
+- identifier: IT-CA2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-CA2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-CA3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 12.0222
+    - 42.38
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-CA3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 12.0222
+    - 42.38
+- identifier: IT-CA3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-CA3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Col_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 13.58814
+    - 41.84936
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Col_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 13.58814
+    - 41.84936
+- identifier: IT-Col_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Col_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Cp2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 12.3572931289673
+    - 41.7042655944824
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Cp2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 12.3572931289673
+    - 41.7042655944824
+- identifier: IT-Cp2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Cp2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Cpz_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 12.3761058
+    - 41.7052493
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Cpz_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 12.3761058
+    - 41.7052493
+- identifier: IT-Cpz_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Cpz_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Isp_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 8.633579
+    - 45.812643
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Isp_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 8.633579
+    - 45.812643
+- identifier: IT-Isp_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Isp_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-La2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.2853
+    - 45.9542
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-La2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.2853
+    - 45.9542
+- identifier: IT-La2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-La2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Lav_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.28132
+    - 45.9562
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Lav_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.28132
+    - 45.9562
+- identifier: IT-Lav_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Lav_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-MBo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.045831
+    - 46.014678
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-MBo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.045831
+    - 46.014678
+- identifier: IT-MBo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-MBo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Noe_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 8.1511694
+    - 40.606176
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Noe_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 8.1511694
+    - 40.606176
+- identifier: IT-Noe_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Noe_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-PT1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 9.061038889
+    - 45.20087222
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-PT1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 9.061038889
+    - 45.20087222
+- identifier: IT-PT1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-PT1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Ren_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.43369
+    - 46.58686
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Ren_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.43369
+    - 46.58686
+- identifier: IT-Ren_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Ren_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Ro1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.93001
+    - 42.40812
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Ro1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.93001
+    - 42.40812
+- identifier: IT-Ro1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Ro1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Ro2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.92093
+    - 42.39026
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Ro2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.92093
+    - 42.39026
+- identifier: IT-Ro2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Ro2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-SR2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 10.290954
+    - 43.732026
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-SR2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 10.290954
+    - 43.732026
+- identifier: IT-SR2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-SR2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-SRo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 10.28444444
+    - 43.72786111
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-SRo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 10.28444444
+    - 43.72786111
+- identifier: IT-SRo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-SRo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: IT-Tor_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 7.578055
+    - 45.84444
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: IT-Tor_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 7.578055
+    - 45.84444
+- identifier: IT-Tor_ccibiomass
+  store: esa-cci-store
+  grid_mapping: IT-Tor_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: JP-MBF_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 142.318583
+    - 44.3842
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: JP-MBF_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 142.318583
+    - 44.3842
+- identifier: JP-MBF_ccibiomass
+  store: esa-cci-store
+  grid_mapping: JP-MBF_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: JP-SMF_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 137.0786
+    - 35.261663
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: JP-SMF_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 137.0786
+    - 35.261663
+- identifier: JP-SMF_ccibiomass
+  store: esa-cci-store
+  grid_mapping: JP-SMF_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: MY-PSO_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 102.3062
+    - 2.973
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: MY-PSO_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 102.3062
+    - 2.973
+- identifier: MY-PSO_ccibiomass
+  store: esa-cci-store
+  grid_mapping: MY-PSO_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: NL-Hor_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 5.071301
+    - 52.24035
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: NL-Hor_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 5.071301
+    - 52.24035
+- identifier: NL-Hor_ccibiomass
+  store: esa-cci-store
+  grid_mapping: NL-Hor_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: NL-Loo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 5.743556
+    - 52.166581
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: NL-Loo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 5.743556
+    - 52.166581
+- identifier: NL-Loo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: NL-Loo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: PA-SPn_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -79.6346
+    - 9.318139833
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: PA-SPn_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -79.6346
+    - 9.318139833
+- identifier: PA-SPn_ccibiomass
+  store: esa-cci-store
+  grid_mapping: PA-SPn_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: PA-SPs_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -79.63142983
+    - 9.313779833
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: PA-SPs_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -79.63142983
+    - 9.313779833
+- identifier: PA-SPs_ccibiomass
+  store: esa-cci-store
+  grid_mapping: PA-SPs_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: RU-Che_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 161.34143
+    - 68.61304
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: RU-Che_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 161.34143
+    - 68.61304
+- identifier: RU-Che_ccibiomass
+  store: esa-cci-store
+  grid_mapping: RU-Che_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: RU-Cok_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 147.4942778
+    - 70.82913889
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: RU-Cok_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 147.4942778
+    - 70.82913889
+- identifier: RU-Cok_ccibiomass
+  store: esa-cci-store
+  grid_mapping: RU-Cok_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: RU-Fyo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 32.9220833
+    - 56.4615278
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: RU-Fyo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 32.9220833
+    - 56.4615278
+- identifier: RU-Fyo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: RU-Fyo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: RU-Ha1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 90.00215
+    - 54.72517
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: RU-Ha1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 90.00215
+    - 54.72517
+- identifier: RU-Ha1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: RU-Ha1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: RU-Sam_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 126.4958
+    - 72.3738
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: RU-Sam_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 126.4958
+    - 72.3738
+- identifier: RU-Sam_ccibiomass
+  store: esa-cci-store
+  grid_mapping: RU-Sam_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: RU-SkP_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 129.168
+    - 62.255
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: RU-SkP_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 129.168
+    - 62.255
+- identifier: RU-SkP_ccibiomass
+  store: esa-cci-store
+  grid_mapping: RU-SkP_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: RU-Tks_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 128.887817
+    - 71.594267
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: RU-Tks_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 128.887817
+    - 71.594267
+- identifier: RU-Tks_ccibiomass
+  store: esa-cci-store
+  grid_mapping: RU-Tks_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: RU-Vrk_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 62.9404678344727
+    - 67.0546798706055
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: RU-Vrk_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 62.9404678344727
+    - 67.0546798706055
+- identifier: RU-Vrk_ccibiomass
+  store: esa-cci-store
+  grid_mapping: RU-Vrk_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: SD-Dem_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 30.4783
+    - 13.2829
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: SD-Dem_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 30.4783
+    - 13.2829
+- identifier: SD-Dem_ccibiomass
+  store: esa-cci-store
+  grid_mapping: SD-Dem_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: SE-St1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 19.050333
+    - 68.3541488
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: SE-St1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 19.050333
+    - 68.3541488
+- identifier: SE-St1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: SE-St1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: SJ-Adv_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 15.923
+    - 78.186
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: SJ-Adv_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 15.923
+    - 78.186
+- identifier: SJ-Adv_ccibiomass
+  store: esa-cci-store
+  grid_mapping: SJ-Adv_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: SJ-Blv_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 11.8310852050781
+    - 78.921630859375
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: SJ-Blv_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 11.8310852050781
+    - 78.921630859375
+- identifier: SJ-Blv_ccibiomass
+  store: esa-cci-store
+  grid_mapping: SJ-Blv_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: SN-Dhr_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -15.43222
+    - 15.40278
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: SN-Dhr_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -15.43222
+    - 15.40278
+- identifier: SN-Dhr_ccibiomass
+  store: esa-cci-store
+  grid_mapping: SN-Dhr_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-AR1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -99.42
+    - 36.4267
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-AR1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -99.42
+    - 36.4267
+- identifier: US-AR1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-AR1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-AR2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -99.5975
+    - 36.6358
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-AR2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -99.5975
+    - 36.6358
+- identifier: US-AR2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-AR2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-ARM_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -97.4888
+    - 36.6058
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-ARM_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -97.4888
+    - 36.6058
+- identifier: US-ARM_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-ARM_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-ARb_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -98.0402
+    - 35.5497
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-ARb_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -98.0402
+    - 35.5497
+- identifier: US-ARb_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-ARb_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-ARc_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -98.04
+    - 35.5465
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-ARc_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -98.04
+    - 35.5465
+- identifier: US-ARc_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-ARc_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Atq_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -157.4089
+    - 70.4696
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Atq_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -157.4089
+    - 70.4696
+- identifier: US-Atq_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Atq_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Blo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -120.6328
+    - 38.8953
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Blo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -120.6328
+    - 38.8953
+- identifier: US-Blo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Blo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-CRT_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -83.3471
+    - 41.6285
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-CRT_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -83.3471
+    - 41.6285
+- identifier: US-CRT_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-CRT_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Cop_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -109.39
+    - 38.09
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Cop_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -109.39
+    - 38.09
+- identifier: US-Cop_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Cop_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-GBT_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -106.2397
+    - 41.3658
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-GBT_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -106.2397
+    - 41.3658
+- identifier: US-GBT_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-GBT_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-GLE_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -106.2399
+    - 41.3665
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-GLE_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -106.2399
+    - 41.3665
+- identifier: US-GLE_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-GLE_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Goo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -89.8735
+    - 34.2547
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Goo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -89.8735
+    - 34.2547
+- identifier: US-Goo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Goo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Ha1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -72.1715
+    - 42.5378
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Ha1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -72.1715
+    - 42.5378
+- identifier: US-Ha1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Ha1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-IB2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -88.241
+    - 41.8406
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-IB2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -88.241
+    - 41.8406
+- identifier: US-IB2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-IB2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Ivo_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -155.7503
+    - 68.4865
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Ivo_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -155.7503
+    - 68.4865
+- identifier: US-Ivo_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Ivo_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-KS1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -80.6709
+    - 28.4583
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-KS1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -80.6709
+    - 28.4583
+- identifier: US-KS1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-KS1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-KS2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -80.6715
+    - 28.6086
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-KS2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -80.6715
+    - 28.6086
+- identifier: US-KS2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-KS2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-LWW_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -97.9789
+    - 34.9604
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-LWW_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -97.9789
+    - 34.9604
+- identifier: US-LWW_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-LWW_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Lin_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -119.8423
+    - 36.3566
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Lin_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -119.8423
+    - 36.3566
+- identifier: US-Lin_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Lin_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Los_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -89.9792
+    - 46.0827
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Los_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -89.9792
+    - 46.0827
+- identifier: US-Los_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Los_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-MMS_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -86.4131
+    - 39.3232
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-MMS_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -86.4131
+    - 39.3232
+- identifier: US-MMS_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-MMS_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Me1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.5
+    - 44.5794
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Me1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.5
+    - 44.5794
+- identifier: US-Me1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Me1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Me2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.5574
+    - 44.4523
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Me2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.5574
+    - 44.4523
+- identifier: US-Me2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Me2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Me3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.6078
+    - 44.3154
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Me3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.6078
+    - 44.3154
+- identifier: US-Me3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Me3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Me4_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.6224
+    - 44.4992
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Me4_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.6224
+    - 44.4992
+- identifier: US-Me4_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Me4_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Me5_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.5668
+    - 44.4372
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Me5_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.5668
+    - 44.4372
+- identifier: US-Me5_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Me5_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Me6_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.6078
+    - 44.3233
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Me6_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.6078
+    - 44.3233
+- identifier: US-Me6_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Me6_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Myb_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.7651
+    - 38.0498
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Myb_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.7651
+    - 38.0498
+- identifier: US-Myb_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Myb_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-NR1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -105.5464
+    - 40.0329
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-NR1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -105.5464
+    - 40.0329
+- identifier: US-NR1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-NR1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Ne1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -96.4766
+    - 41.1651
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Ne1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -96.4766
+    - 41.1651
+- identifier: US-Ne1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Ne1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Ne2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -96.4701
+    - 41.1649
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Ne2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -96.4701
+    - 41.1649
+- identifier: US-Ne2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Ne2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Ne3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -96.4397
+    - 41.1797
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Ne3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -96.4397
+    - 41.1797
+- identifier: US-Ne3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Ne3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-ORv_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -83.0183
+    - 40.0201
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-ORv_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -83.0183
+    - 40.0201
+- identifier: US-ORv_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-ORv_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Oho_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -83.8438
+    - 41.5545
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Oho_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -83.8438
+    - 41.5545
+- identifier: US-Oho_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Oho_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-PFa_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -90.2723
+    - 45.9459
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-PFa_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -90.2723
+    - 45.9459
+- identifier: US-PFa_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-PFa_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Prr_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -147.4876
+    - 65.1237
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Prr_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -147.4876
+    - 65.1237
+- identifier: US-Prr_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Prr_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-SRC_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -110.8395
+    - 31.9083
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-SRC_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -110.8395
+    - 31.9083
+- identifier: US-SRC_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-SRC_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-SRG_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -110.8277
+    - 31.7894
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-SRG_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -110.8277
+    - 31.7894
+- identifier: US-SRG_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-SRG_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-SRM_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -110.8661
+    - 31.8214
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-SRM_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -110.8661
+    - 31.8214
+- identifier: US-SRM_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-SRM_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Sta_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -106.8024
+    - 41.3966
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Sta_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -106.8024
+    - 41.3966
+- identifier: US-Sta_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Sta_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Syv_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -89.3477
+    - 46.242
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Syv_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -89.3477
+    - 46.242
+- identifier: US-Syv_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Syv_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Ton_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -120.966
+    - 38.4316
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Ton_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -120.966
+    - 38.4316
+- identifier: US-Ton_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Ton_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Tw1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.6469
+    - 38.1074
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Tw1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.6469
+    - 38.1074
+- identifier: US-Tw1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Tw1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Tw2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.6433
+    - 38.1047
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Tw2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.6433
+    - 38.1047
+- identifier: US-Tw2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Tw2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Tw3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.6467
+    - 38.1159
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Tw3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.6467
+    - 38.1159
+- identifier: US-Tw3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Tw3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Tw4_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.6414
+    - 38.103
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Tw4_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.6414
+    - 38.103
+- identifier: US-Tw4_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Tw4_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Twt_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -121.653
+    - 38.1087
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Twt_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -121.653
+    - 38.1087
+- identifier: US-Twt_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Twt_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-UMB_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -84.7138
+    - 45.5598
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-UMB_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -84.7138
+    - 45.5598
+- identifier: US-UMB_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-UMB_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-UMd_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -84.6975
+    - 45.5625
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-UMd_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -84.6975
+    - 45.5625
+- identifier: US-UMd_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-UMd_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Var_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -120.9507
+    - 38.4133
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Var_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -120.9507
+    - 38.4133
+- identifier: US-Var_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Var_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-WCr_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -90.0799
+    - 45.8059
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-WCr_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -90.0799
+    - 45.8059
+- identifier: US-WCr_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-WCr_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-WPT_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -82.9962
+    - 41.4646
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-WPT_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -82.9962
+    - 41.4646
+- identifier: US-WPT_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-WPT_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Whs_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -110.0522
+    - 31.7438
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Whs_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -110.0522
+    - 31.7438
+- identifier: US-Whs_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Whs_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi0_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.0814
+    - 46.6188
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi0_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.0814
+    - 46.6188
+- identifier: US-Wi0_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi0_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi1_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.2329
+    - 46.7305
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi1_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.2329
+    - 46.7305
+- identifier: US-Wi1_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi1_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi2_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.1528
+    - 46.6869
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi2_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.1528
+    - 46.6869
+- identifier: US-Wi2_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi2_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi3_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.0987
+    - 46.6347
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi3_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.0987
+    - 46.6347
+- identifier: US-Wi3_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi3_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi4_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.1663
+    - 46.7393
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi4_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.1663
+    - 46.7393
+- identifier: US-Wi4_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi4_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi5_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.0858
+    - 46.6531
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi5_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.0858
+    - 46.6531
+- identifier: US-Wi5_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi5_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi6_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.2982
+    - 46.6249
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi6_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.2982
+    - 46.6249
+- identifier: US-Wi6_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi6_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi7_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.0693
+    - 46.6491
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi7_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.0693
+    - 46.6491
+- identifier: US-Wi7_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi7_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi8_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.2524
+    - 46.7223
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi8_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.2524
+    - 46.7223
+- identifier: US-Wi8_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi8_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wi9_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -91.0814
+    - 46.6188
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wi9_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -91.0814
+    - 46.6188
+- identifier: US-Wi9_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wi9_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: US-Wkg_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - -109.9419
+    - 31.7365
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: US-Wkg_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - -109.9419
+    - 31.7365
+- identifier: US-Wkg_ccibiomass
+  store: esa-cci-store
+  grid_mapping: US-Wkg_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: ZA-Kru_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 31.4969
+    - -25.0197
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: ZA-Kru_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 31.4969
+    - -25.0197
+- identifier: ZA-Kru_ccibiomass
+  store: esa-cci-store
+  grid_mapping: ZA-Kru_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+- identifier: ZM-Mon_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: *id001
+    point:
+    - 23.25277778
+    - -15.43777778
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: ZM-Mon_era5
+  store: cds
+  data_id: reanalysis-era5-land
+  open_params:
+    variable_names:
+    - 2m_temperature
+    - total_precipitation
+    - surface_solar_radiation_downwards
+    - surface_net_solar_radiation
+    - 2m_dewpoint_temperature
+    time_range: *id001
+    location:
+    - 23.25277778
+    - -15.43777778
+- identifier: ZM-Mon_ccibiomass
+  store: esa-cci-store
+  grid_mapping: ZM-Mon_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+data_stores:
+- identifier: storage
+  store_id: file
+  store_params:
+    root: data
+- identifier: esa-cci-store
+  store_id: cciodp
+- identifier: stac-store
+  store_id: stac-cdse-ardc
+  store_params:
+    key: OX94JKCFEF1PLNVNAU2J
+    secret: ceucxUr3s8yNhaP8k3g0FnQERKgm8SUfd9TdSFrF
+- identifier: cds
+  store_id: cds
+  store_params:
+    endpoint_url: https://cds.climate.copernicus.eu/api
+    cds_api_key: 8ba066d4-5195-4c1d-af91-6fb13bfc22df
+    normalize_names: true

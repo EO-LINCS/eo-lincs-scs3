@@ -1,0 +1,36 @@
+datasets:
+- identifier: AU-Ade_ccibiomass
+  store: esa-cci-store
+  grid_mapping: AU-Ade_ccibiomass_grid_mapping
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range:
+    - '2020-01-01'
+    - '2020-12-31'
+grid_mappings:
+- identifier: AU-Ade_ccibiomass_grid_mapping
+  bbox:
+  - 727633
+  - 8551400
+  - 731633
+  - 8555400
+  crs: EPSG:32752
+  spatial_res: 100
+data_stores:
+- identifier: storage
+  store_id: file
+  store_params:
+    root: data_esacciAGB/AU-Ade
+- identifier: esa-cci-store
+  store_id: cciodp
+- identifier: stac-store
+  store_id: stac-cdse-ardc
+  store_params:
+    key: OX94JKCFEF1PLNVNAU2J
+    secret: ceucxUr3s8yNhaP8k3g0FnQERKgm8SUfd9TdSFrF
+- identifier: cds
+  store_id: cds
+  store_params:
+    endpoint_url: https://cds.climate.copernicus.eu/api
+    cds_api_key: d33a9d75-c4cc-406d-9f28-b94bf2ddd30f
+    normalize_names: true

@@ -1,0 +1,48 @@
+datasets:
+- identifier: ZM-Mon_sen2
+  store: stac-store
+  data_id: sentinel-2-l2a
+  open_params:
+    time_range: &id001
+    - '2020-01-01'
+    - '2020-12-31'
+    point:
+    - 23.25277778
+    - -15.43777778
+    bbox_width: 4000
+    spatial_res: 10
+    asset_names:
+    - B01
+    - B02
+    - B03
+    - B04
+    - B05
+    - B06
+    - B07
+    - B08
+    - B8A
+    - B09
+    - B11
+    - B12
+    - SCL
+- identifier: ZM-Mon_ccibiomass
+  store: esa-cci-store
+  grid_mapping: ZM-Mon_sen2
+  data_id: esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.MERGED.6-0.100m
+  open_params:
+    time_range: *id001
+data_stores:
+- identifier: storage
+  store_id: file
+  store_params:
+    root: data_sentinel-2_pc/ZM-Mon
+- identifier: esa-cci-store
+  store_id: cciodp
+- identifier: stac-store
+  store_id: stac-pc-ardc
+- identifier: cds
+  store_id: cds
+  store_params:
+    endpoint_url: https://cds.climate.copernicus.eu/api
+    cds_api_key: d33a9d75-c4cc-406d-9f28-b94bf2ddd30f
+    normalize_names: true
