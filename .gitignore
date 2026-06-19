@@ -166,4 +166,4 @@ cython_debug/
 *.zarr
 *.nc
 
-/scientific_analysis/output_AU-Dry_WROASTED
+scientific_analysis/output_*
